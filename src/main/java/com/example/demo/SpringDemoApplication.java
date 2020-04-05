@@ -14,12 +14,12 @@ import com.alibaba.druid.pool.DruidDataSource;
 @SpringBootApplication
 public class SpringDemoApplication {
 
-	@Bean
+/*	@Bean
 	@ConfigurationProperties(prefix = "db")
 	public DataSource dateSource() {
 		DruidDataSource dataSource = new DruidDataSource();
 		return (DataSource) dataSource;
-	}
+	}*/
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDemoApplication.class, args);

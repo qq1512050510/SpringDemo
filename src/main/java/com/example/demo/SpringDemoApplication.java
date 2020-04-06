@@ -1,17 +1,16 @@
 package com.example.demo;
 
-import javax.sql.DataSource;
-
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Bean;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 
-import com.alibaba.druid.pool.DruidDataSource;
 
 //未配置数据源启动 (exclude = { DataSourceAutoConfiguration.class })
 /*@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })*/
 @SpringBootApplication
+@EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class })
 public class SpringDemoApplication {
 
 /*	@Bean

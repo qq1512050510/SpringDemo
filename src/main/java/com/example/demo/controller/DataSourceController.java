@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -11,14 +12,21 @@ import java.sql.SQLException;
 @Controller
 public class DataSourceController {
 	
+    //@Autowired
+    //private DataSource dataSource;
+
     @Autowired
-    private DataSource dataSource;
+   // @Qualifier("hikariDataSource")
+    private DataSource hikariDataSource;
 
     @RequestMapping("/index")
     @ResponseBody
     public String index() throws SQLException {
-        System.out.println(dataSource.getConnection());
-        System.out.println(dataSource);
+        //System.out.println(dataSource.getConnection());
+       // System.out.println(dataSource);
+        System.out.println(hikariDataSource.getConnection());
+        System.out.println(hikariDataSource);
+        
         return "hello spring boot";
     }
 }

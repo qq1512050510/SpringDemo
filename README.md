@@ -27,4 +27,8 @@ The following guides illustrate how to use some features concretely:
 
 ##DataSourceAutoConfiguration配置
 
+###druid配置
+
+###hikari配置
+配置文件修改为hikari相关配置
 

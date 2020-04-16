@@ -1,0 +1,19 @@
+package com.example.demo.inter.impl;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+
+import com.example.demo.inter.MovieFactor;
+
+import lombok.extern.slf4j.Slf4j;
+@Configuration
+@Profile(value="dev")
+@Slf4j
+public class American implements MovieFactor{
+
+	@Override
+	public void speak() {
+		log.info("American");
+	}
+
+}

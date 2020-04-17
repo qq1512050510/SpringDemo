@@ -19,7 +19,7 @@ public class SpringProfileTest {
 	@Test
 	public void testProfile() {
 		System.out.println("test start");
-		p.speak();
+		//p.speak();
 	}
 
 }

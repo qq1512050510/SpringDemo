@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.example.demo.bean.Person;
+
 import javax.sql.DataSource;
 import java.sql.SQLException;
 
@@ -18,6 +20,9 @@ public class DataSourceController {
     @Autowired
    // @Qualifier("hikariDataSource")
     private DataSource hikariDataSource;
+    
+    @Autowired
+    private Person person;
 
     @RequestMapping("/index")
     @ResponseBody
@@ -26,7 +31,7 @@ public class DataSourceController {
        // System.out.println(dataSource);
         System.out.println(hikariDataSource.getConnection());
         System.out.println(hikariDataSource);
-        
+        person.speak();
         return "hello spring boot";
     }
 }

@@ -25,6 +25,20 @@ spring:
     username: root
     password: success
     driver-class-name: com.mysql.cj.jdbc.Driver
+    
+---
+#开发环境配置
+spring:
+  profiles: prod
+  application:
+    name: SpringDemo  
+  #数据库连接信息
+  datasource:
+    name: test
+    url: jdbc:mysql://127.0.0.1:3306/springdemo?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&characterEncoding=UTF-8&useSSL=true 
+    username: root
+    password: success
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 ############################################################
 #         

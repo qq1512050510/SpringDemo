@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 //未配置数据源启动 (exclude = { DataSourceAutoConfiguration.class })
 /*@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })*/
 @SpringBootApplication
-@EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class })
+//@EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class })
 public class SpringDemoApplication {
 
 /*	@Bean

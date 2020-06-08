@@ -83,6 +83,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>co.paralleluniverse</groupId>
+			<artifactId>quasar-core</artifactId>
+			<version>0.7.5</version>
+		</dependency>
+
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
@@ -109,9 +115,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<source>1.8</source>
+					<!--<source>1.8</source>
 					<target>1.8</target>
-					<skipTests>true</skipTests>
+					<skipTests>true</skipTests>-->
 				</configuration>
 			</plugin>
 		</plugins>

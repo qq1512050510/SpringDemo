@@ -15,7 +15,7 @@ import com.example.demo.bean.Person;
 //@ContextConfiguration(Locations="../application.yml")
 //@ContextConfiguration(locations = { "classpath*:/application.yml", "classpath*:/spring2.xml" }) 
 //@ContextConfiguration(classes = SpringDemoApplication.class)
-@SpringBootTest(classes=SpringDemoApplication.class)
+//@SpringBootTest(classes=SpringDemoApplication.class)
 @ActiveProfiles("prod")
 public class SpringProfileTest {
 	@Autowired

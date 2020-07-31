@@ -11,9 +11,22 @@ public class HelloFiber {
             Fiber<Void> fiber = new Fiber<Void>(new SuspendableRunnable() {
                 @Override
                 public void run() throws SuspendExecution, InterruptedException {
-
+                    calc();
                 }
             });
+            fiber.start();
         }
+        long end = System.currentTimeMillis();
+        System.out.println(end - start);
+    }
+
+    private static void calc() {
+        int result = 0;
+        for (int i = 0; i < 10000; i++) {
+            for (int j = 0; j < 200; j++) {
+                result += j;
+            }
+        }
+        System.out.println();
     }
 }

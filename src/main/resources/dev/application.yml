@@ -1,0 +1,4 @@
+spring:
+  profiles:
+    active: dev
+#可以添加基础配置

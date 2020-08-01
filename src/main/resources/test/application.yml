@@ -1,0 +1,4 @@
+spring:
+  profiles:
+    active: test
+#可以添加基础配置

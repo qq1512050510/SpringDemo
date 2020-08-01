@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8083
 # 自定义 数据库配置信息
 db:
   username: root
@@ -10,12 +10,11 @@ db:
 
 spring:
   profiles:
-    active: dev
+    active: test
  
 ---
 #开发环境配置
 spring:
-  profiles: dev
   application:
     name: SpringDemo  
   #数据库连接信息

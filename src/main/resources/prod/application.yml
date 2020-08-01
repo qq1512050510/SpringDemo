@@ -1,0 +1,4 @@
+spring:
+  profiles:
+    active: prod
+#可以添加基础配置
